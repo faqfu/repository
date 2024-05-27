@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "head head head head"
+        "nav nav side side"
+        "foot foot foot foot";
+    text-align: center;
+    grid-template-columns: 30px 1fr 1fr;
+    grid-template-rows: 50px 1fr 30px;
+}
+
+header {
+    grid-area: head;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(153, 153, 154);
+    color: white;
+}
+
+aside {
+    grid-area: side;
+    background-color: rgb(126, 123, 123);
+    color: white;
+}
+
+footer {
+    grid-area: foot;
+    background-color: black;
+    color: white;
+}
